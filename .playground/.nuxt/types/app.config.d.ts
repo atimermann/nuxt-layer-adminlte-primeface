@@ -2,10 +2,9 @@
 import type { CustomAppConfig } from 'nuxt/schema'
 import type { Defu } from 'defu'
 import cfg0 from "/home/andre/projetos/@agtm/nuxt-layer-adminlite-primeface/.playground/app.config"
-import cfg1 from "/home/andre/projetos/@agtm/nuxt-layer-adminlite-primeface/src/app.config"
 
 declare const inlineConfig = {}
-type ResolvedAppConfig = Defu<typeof inlineConfig, [typeof cfg0, typeof cfg1]>
+type ResolvedAppConfig = Defu<typeof inlineConfig, [typeof cfg0]>
 type IsAny<T> = 0 extends 1 & T ? true : false
 
 type MergedAppConfig<Resolved extends Record<string, any>, Custom extends Record<string, any>> = {

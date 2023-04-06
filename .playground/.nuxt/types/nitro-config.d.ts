@@ -4,9 +4,8 @@
 import type { Defu } from 'defu'
 
 import type { default as appConfig0 } from "/home/andre/projetos/@agtm/nuxt-layer-adminlite-primeface/.playground/app.config";
-import type { default as appConfig1 } from "/home/andre/projetos/@agtm/nuxt-layer-adminlite-primeface/src/app.config";
 
-type UserAppConfig = Defu<{}, [typeof appConfig0, typeof appConfig1]>
+type UserAppConfig = Defu<{}, [typeof appConfig0]>
 
 declare module 'nitropack' {
   interface AppConfig extends UserAppConfig {}

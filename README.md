@@ -64,13 +64,14 @@ definePageMeta({
 Este template inclui um arquivo `app.vue` com o seguinte conteúdo:
 
 ```vue
+
 <template>
-<NuxtLayout />
+  <NuxtLayout/>
 </template>
 ```
 
-Este arquivo serve como um ponto de entrada para os layouts e páginas da sua aplicação. O componente `<NuxtLayout />` é responsável por renderizar o layout apropriado, dependendo da configuração das metadados da página.
-
+Este arquivo serve como um ponto de entrada para os layouts e páginas da sua aplicação. O componente `<NuxtLayout />` é
+responsável por renderizar o layout apropriado, dependendo da configuração das metadados da página.
 
 ## Uso do PrimeVue
 
@@ -84,6 +85,23 @@ import Button from "primevue/button"
 
 const app = createApp(App);
 app.component('Button', Button);
+```
+
+Você pode simplesmente criar um plugin para isso:
+
+Exemplo:
+
+    src/plugins/prime-vue.mjs
+
+```javascript
+import {defineNuxtPlugin} from '#app'
+
+// Módulos carregados
+import Card from 'primevue/card'
+
+export default defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.vueApp.component('Card', Card)
+})
 ```
 
 # Desenvolvimento
