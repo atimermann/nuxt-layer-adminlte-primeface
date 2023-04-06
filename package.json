@@ -3,7 +3,7 @@
   "private": false,
   "type": "module",
   "version": "0.0.4",
-  "description": "Admin LTE template with Prime Vue",
+  "description": "Nuxt 3 layer for integrating AdminLTE 3 and PrimeVue 3 in your project",
   "author": "André Timermann",
   "license": "ISC",
   "main": "./nuxt.config.ts",
@@ -18,6 +18,14 @@
     "lint": "eslint . --ext .js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "postinstall": "nuxt prepare .playground"
   },
+  "keywords": [
+    "nuxt",
+    "nuxt3",
+    "adminlte",
+    "primevue",
+    "template",
+    "layer"
+  ],
   "dependencies": {
     "@nuxt/kit": "^3.3.2",
     "lodash": "^4.17.21",
@@ -34,11 +42,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atimermann/nuxt-layer-adminlite-primeface.git"
+    "url": "git+https://github.com/atimermann/nuxt-layer-adminlte-primeface.git"
   },
-  "homepage": "https://github.com/atimermann/nuxt-layer-adminlite-primeface#readme",
+  "homepage": "https://github.com/atimermann/nuxt-layer-adminlte-primeface#readme",
   "bugs": {
-    "url": "https://github.com/atimermann/nuxt-layer-adminlite-primeface/issues"
+    "url": "https://github.com/atimermann/nuxt-layer-adminlte-primeface/issues"
   },
   "files": [
     "src",
