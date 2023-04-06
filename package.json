@@ -1,0 +1,35 @@
+{
+  "name": "@agtm/nuxt-layer-adminlte-primeface",
+  "private": false,
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Admin LTE template with Prime Vue",
+  "author": "André Timermann",
+  "license": "ISC",
+  "main": "./nuxt.config.ts",
+  "scripts": {
+    "publish-patch": "npm version patch && npm publish --access public && git push",
+    "publish-minor": "npm version minor && npm publish --access public && git push",
+    "publish-major": "npm version major && npm publish --access public && git push",
+    "dev": "nuxi dev .playground",
+    "build": "nuxt build .playground",
+    "generate": "nuxt generate .playground",
+    "preview": "nuxt preview .playground",
+    "lint": "eslint . --ext .js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "postinstall": "nuxt prepare .playground"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.3.2",
+    "lodash": "^4.17.21",
+    "primeflex": "^3.3.0",
+    "primeicons": "^6.0.1",
+    "primevue": "^3.26.1"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^0.1.1",
+    "eslint": "^8.28.0",
+    "eslint-config-standard": "^17.0.0",
+    "nuxt": "^3.3.2",
+    "vitest": "^0.29.7"
+  }
+}
