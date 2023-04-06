@@ -6,26 +6,19 @@
  *
  */
 
-// import { fileURLToPath } from 'url'
-// import { dirname, join } from 'path'
 import { defineNuxtPlugin } from '#app'
 import PrimeVue from 'primevue/config'
 
-// // CSS Prime Vue
-import 'primevue/resources/primevue.min.css'
-import 'primeicons/primeicons.css'
-import 'primeflex/primeflex.css'
-//
 import { pt } from '../locale/locale.mjs'
-// // Módulos carregados
+// Módulos carregados
 import PanelMenu from 'primevue/panelmenu'
 import Button from 'primevue/button'
 import DataTable from 'primevue/datatable'
 import Column from 'primevue/column'
 import Breadcrumb from 'primevue/breadcrumb'
 import Tree from 'primevue/tree'
-//
-// // // Form Fields
+
+// Form Fields
 import InputText from 'primevue/inputtext'
 import AutoComplete from 'primevue/autocomplete'
 import Calendar from 'primevue/calendar'

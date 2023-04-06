@@ -8,7 +8,7 @@ export default {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "error-404.a4a7b7e4.js",
+    "file": "error-404.d650a0f4.js",
     "imports": [
       "../../node_modules/nuxt/dist/app/entry.js"
     ],
@@ -28,7 +28,7 @@ export default {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "error-500.fdca3494.js",
+    "file": "error-500.522a9dbd.js",
     "imports": [
       "../../node_modules/nuxt/dist/app/entry.js"
     ],
@@ -62,7 +62,7 @@ export default {
       "../../src/layouts/admin.vue",
       "../../virtual:nuxt:/home/andre/projetos/@agtm/nuxt-layer-adminlite-primeface/.playground/.nuxt/error-component.mjs"
     ],
-    "file": "entry.268d08e7.js",
+    "file": "entry.74f98a74.js",
     "isEntry": true,
     "src": "../../node_modules/nuxt/dist/app/entry.js"
   },
@@ -163,7 +163,7 @@ export default {
     "css": [
       "admin.e43b0616.css"
     ],
-    "file": "admin.4c9d5df7.js",
+    "file": "admin.9d723fab.js",
     "imports": [
       "../../node_modules/nuxt/dist/app/entry.js"
     ],
@@ -191,7 +191,7 @@ export default {
       "../../node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "../../node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "error-component.1d341173.js",
+    "file": "error-component.1002e904.js",
     "imports": [
       "../../node_modules/nuxt/dist/app/entry.js"
     ],
@@ -201,7 +201,7 @@ export default {
   "../pages/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.3e06d154.js",
+    "file": "index.06efe90f.js",
     "imports": [
       "../../node_modules/nuxt/dist/app/entry.js"
     ],

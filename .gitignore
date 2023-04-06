@@ -1,13 +1,14 @@
 node_modules
-/*.log*
-/.nuxt
-/.nitro
-/.cache
-/.output
-/.env
-/dist
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
 
 
 # IDE / Editor
-/.idea
+.idea
+
 
