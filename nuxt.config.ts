@@ -3,7 +3,6 @@ import { dirname, join } from 'path'
 
 // TODO: Alterar quando for corrigido
 // https://nuxt.com/docs/guide/going-further/layers#relative-paths-and-aliases
-// @ts-ignore
 const currentDir = dirname(fileURLToPath(import.meta.url))
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config

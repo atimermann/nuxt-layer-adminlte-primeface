@@ -1,7 +1,7 @@
 /**
  * **Created on 12/02/2023**
  *
- * <File Reference Aqui: locale.mjs>
+ * src/locale/locale.mjs
  * @author André Timermann <andre@timermann.com.br>
  *
  */

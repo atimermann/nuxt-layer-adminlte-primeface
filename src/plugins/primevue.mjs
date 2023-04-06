@@ -1,7 +1,7 @@
 /**
  * **Created on 31/03/2023**
  *
- * src/runtime/plugins/primevue.mjs
+ * src/plugins/primevue.mjs
  * @author André Timermann <andre@timermann.com.br>
  *
  */
