@@ -7,16 +7,17 @@
   "author": "André Timermann",
   "license": "ISC",
   "main": "./nuxt.config.ts",
+  "module": "index.mjs",
   "scripts": {
     "publish-patch": "npm version patch && npm publish && git push",
     "publish-minor": "npm version minor && npm publish && git push",
     "publish-major": "npm version major && npm publish && git push",
-    "dev": "nuxi dev .playground",
-    "build": "nuxt build .playground",
-    "generate": "nuxt generate .playground",
-    "preview": "nuxt preview .playground",
+    "dev": "nuxi dev playground",
+    "build": "nuxt build playground",
+    "generate": "nuxt generate playground",
+    "preview": "nuxt preview playground",
     "lint": "eslint . --ext .js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "postinstall": "nuxt prepare .playground"
+    "postinstall": "nuxt prepare playground"
   },
   "keywords": [
     "nuxt",

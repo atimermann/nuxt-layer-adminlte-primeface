@@ -1,7 +1,8 @@
 <template>
-  <div>
-    Nuxt module playground!
-
+  <div class="card">
+    <div class="card-body">
+      Nuxt module playground!
+    </div>
   </div>
 </template>
 

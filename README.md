@@ -34,37 +34,15 @@ defineNuxtConfig({
 })
 ```
 
-## Layouts Inclusos
+## Layouts
 
-Esta camada inclui alguns layouts pré-definidos que você pode utilizar em seu projeto:
-
-1. `admin.vue`: Usado nas páginas internas quando o usuário está autenticado. Exemplo de uso:
-
-```vue
-
-<template>
-  <div>
-    Nuxt module playground!
-  </div>
-</template>
-
-<script setup>
-definePageMeta({
-  layout: 'admin'
-})
-</script>
-```
-
-2. `login.vue`: Usado na tela de login.
-
-3. `guest.vue`: Usado para páginas acessíveis por usuários não autenticados.
+[Documentação completa sobre Layout](./docs/layout.md)
 
 ## Arquivo App.vue
 
 Este template inclui um arquivo `app.vue` com o seguinte conteúdo:
 
 ```vue
-
 <template>
   <NuxtLayout/>
 </template>
@@ -114,9 +92,9 @@ a [documentação oficial do Nuxt sobre a criação de layers](https://nuxt.com/
 Your theme is at the root of this repository, it is exactly like a regular Nuxt project, except you can publish it on
 NPM.
 
-The `.playground` directory should help you on trying your theme during development.
+The `playground` directory should help you on trying your theme during development.
 
-Running `npm dev` will prepare and boot `.playground` directory, which imports your theme itself.
+Running `npm dev` will prepare and boot `playground` directory, which imports your theme itself.
 
 ## Development Server
 
