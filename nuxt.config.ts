@@ -36,4 +36,11 @@ export default defineNuxtConfig({
       }
     }
   }
+  // ,nitro: {
+  //   esbuild: {
+  //     options: {
+  //       target: 'es2022'
+  //     }
+  //   }
+  // }
 })

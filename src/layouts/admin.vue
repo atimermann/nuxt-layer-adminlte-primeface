@@ -19,7 +19,6 @@
     <div class="content-wrapper">
       <!-- Content Header (Page header) -->
       <ContentHeader />
-
       <!-- Main content -->
       <section class="content">
         <nuxtPage />

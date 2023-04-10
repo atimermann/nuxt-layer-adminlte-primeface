@@ -1,5 +1,7 @@
+// const x = import('./assets/img/photo1.png')
+
 export default defineAppConfig({
-  myLayer: {
-    name: 'My amazing Nuxt layer (overwritten)'
-  }
+  // template: {
+  //   logoPath: (await import('../src/assets/adminlte/img/user1-128x128.jpg')).default
+  // }
 })
