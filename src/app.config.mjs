@@ -1,5 +1,6 @@
-export default defineAppConfig({
+
+export default {
   template: {
     logoPath: 'DEFAULT'
   }
-})
+}
