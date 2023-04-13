@@ -1,6 +1,6 @@
 # Layouts
 
-Esta template inclui alguns layouts pré-definidos que você pode utilizar em seu projeto:
+Este template inclui alguns layouts pré-definidos que você pode utilizar no seu projeto:
 
 1. `admin.vue`: Usado nas páginas internas quando o usuário está autenticado. Exemplo de uso:
 
@@ -29,11 +29,10 @@ O layout funciona como um componente vue3 com [slots nomeados](https://vuejs.org
 
 Então podemos fornecer um conteúdo para esses slotes da seguinte forma:
 
-Crie um layout novo em seu projeto, por exemplo:
+Crie um layout novo no seu projeto, por exemplo:
 
 **layouts/admin.vue:**
 ```vue
-
 <template>
   <AdminLayout>
     <template #footer>
@@ -55,11 +54,11 @@ Crie um layout novo em seu projeto, por exemplo:
 </template>
 
 <script setup>
-import {AdminLayout} from '@agtm/nuxt-layer-adminlite-primeface'
+import { AdminLayout } from '@agtm/nuxt-layer-adminlite-primeface'
 </script>
 ```
 
-**Nota:** Verifique os slots os layouts disponiveis diretamente na fonte:
+**Nota:** Verifique os slots dos layouts disponiveis diretamente no código fonte:
 
     src/layouts/admin.vue    
 
