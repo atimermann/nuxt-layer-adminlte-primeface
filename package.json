@@ -51,6 +51,6 @@
   },
   "files": [
     "src",
-    "nuxt.config.ts"
+    "nuxt.config.mjs"
   ]
 }
