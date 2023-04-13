@@ -6,7 +6,7 @@
   "description": "Nuxt 3 layer for integrating AdminLTE 3 and PrimeVue 3 in your project",
   "author": "André Timermann",
   "license": "ISC",
-  "main": "./nuxt.config.ts",
+  "main": "./nuxt.config.mjs",
   "module": "index.mjs",
   "scripts": {
     "publish-patch": "npm version patch && npm publish && git push",
