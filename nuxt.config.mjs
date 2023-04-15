@@ -1,6 +1,6 @@
-import { defineNuxtConfig } from 'nuxt/config'
-import { fileURLToPath } from 'url'
-import { dirname, join } from 'path'
+import {defineNuxtConfig} from 'nuxt/config'
+import {fileURLToPath} from 'url'
+import {dirname, join} from 'path'
 
 // TODO: Alterar quando for corrigido
 // https://nuxt.com/docs/guide/going-further/layers#relative-paths-and-aliases
@@ -9,6 +9,16 @@ const currentDir = dirname(fileURLToPath(import.meta.url))
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   srcDir: 'src',
+  app: {
+    head: {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback'
+        }
+      ]
+    }
+  },
   css: [
     // ========================
     //  PRIME CONFIG

@@ -1,7 +1,7 @@
 <template>
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-dark-primary elevation-4 side">
     <!-- Brand Logo -->
-    <a href="../../index3.html" class="brand-link">
+    <a href="#" class="brand-link">
       <img
         :src="defaultLogoPath"
         alt="AdminLTE Logo"
@@ -9,7 +9,7 @@
         style="opacity: .8"
       >
 
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">{{ template.logoLabel }}</span>
     </a>
 
     <!-- Sidebar -->
@@ -24,9 +24,6 @@
 
 const { template } = useAppConfig()
 
-console.log('template.logoPath', template.logoPath)
-
-// https://github.com/rollup/plugins/tree/master/packages/dynamic-import-vars#limitations
 const defaultLogoPath = (template.logoPath === 'DEFAULT')
   ? (await import('@assets/adminlte/img/AdminLTELogo.png')).default
   : template.logoPath

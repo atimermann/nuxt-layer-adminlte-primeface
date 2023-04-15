@@ -34,6 +34,11 @@ defineNuxtConfig({
 })
 ```
 
+Para personalizar o template você pode custimizar o layout (veja próximo tópico) e através de configuração no
+app.config
+
+[Consulte aqui refêrencia completa do app.config](./docs/config.md)
+
 ## Layouts
 
 [Documentação completa sobre Layout](./docs/layout.md)
@@ -43,6 +48,7 @@ defineNuxtConfig({
 Este template inclui um arquivo `app.vue` com o seguinte conteúdo:
 
 ```vue
+
 <template>
   <NuxtLayout/>
 </template>

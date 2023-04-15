@@ -7,7 +7,7 @@
   "author": "André Timermann",
   "license": "ISC",
   "main": "./nuxt.config.mjs",
-  "module": "index.mjs",
+  "module": "./src/index.mjs",
   "scripts": {
     "publish-patch": "npm version patch && npm publish && git push",
     "publish-minor": "npm version minor && npm publish && git push",

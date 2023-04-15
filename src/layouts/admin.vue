@@ -1,36 +1,37 @@
 <template>
-  <div class="wrapper">
-    <!-- Navbar -->
-    <TopNavbar>
-      <RightNavbarLinks>
-        <!-- Include other right navbar items like search, messages, notifications, etc. -->
-      </RightNavbarLinks>
-    </TopNavbar>
-    <!-- /.navbar -->
+  <div class="control-sidebar-slide-open sidebar-mini" :class="{'sidebar-collapse': colapsedMenu}">
+    <div class="wrapper">
+      <!-- Navbar -->
+      <TopNavbar>
+        <RightNavbarLinks>
+          <!-- Include other right navbar items like search, messages, notifications, etc. -->
+        </RightNavbarLinks>
+      </TopNavbar>
+      <!-- /.navbar -->
 
-    <!-- Main Sidebar Container -->
-    <MainSidebar>
-      <SidebarUser />
-      <SidebarSearch />
-      <side-bar-menu :menu-items="menuItems" />
-    </MainSidebar>
+      <!-- Main Sidebar Container -->
+      <MainSidebar>
+        <!--      <SidebarSearch />-->
+        <side-bar-menu />
+      </MainSidebar>
 
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-      <!-- Content Header (Page header) -->
-      <ContentHeader />
-      <!-- Main content -->
-      <section class="content">
-        <nuxtPage />
-      </section>
-      <!-- /.content -->
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <ContentHeader />
+        <!-- Main content -->
+        <section class="content">
+          <nuxtPage />
+        </section>
+        <!-- /.content -->
+      </div>
+
+      <footer class="main-footer">
+        <slot name="footer" />
+      </footer>
+
+      <!-- /.control-sidebar -->
     </div>
-
-    <footer class="main-footer">
-      <slot name="footer" />
-    </footer>
-
-    <!-- /.control-sidebar -->
   </div>
 </template>
 
@@ -41,15 +42,22 @@
 // TODO: Documentar tudo aqui e no zim (De preferencia criar cheatChet)
 // import {MenuItem, SubMenuItem} from '@agtm/nuxt-layer-adminlte-primevue'
 
-import { ref } from 'vue'
+import { ref, provide } from 'vue'
 
 import SideBarMenu from '../components/admin/SideBarMenu.vue'
 import TopNavbar from '../components/admin/TopNavbar.vue'
 import RightNavbarLinks from '../components/admin/RightNavbarLinks.vue'
 import MainSidebar from '../components/admin/MainSidebar.vue'
-import SidebarUser from '../components/admin/SidebarUser.vue'
-import SidebarSearch from '../components/admin/SidebarSearch.vue'
+// import SidebarSearch from '../components/admin/SidebarSearch.vue'
 import ContentHeader from '../components/admin/ContentHeader.vue'
+
+const colapsedMenu = ref(false)
+
+function colapseMenu () {
+  colapsedMenu.value = !colapsedMenu.value
+}
+
+provide('colapseMenu', colapseMenu)
 
 class MenuItem {
   constructor (title, iconClasses, link) {
@@ -119,5 +127,7 @@ const calendar = new MenuItem('Calendar', ['pi', 'pi-calendar'], '../calendar.ht
 const kanbanBoard = new MenuItem('Kanban Board', ['pi', 'pi-clone'], '../kanban.html')
 
 const menuItems = ref([dashboard, widgets, calendar, kanbanBoard])
+
+// console.log('X', JSON.stringify(menuItems, undefined, ' '))
 
 </script>
