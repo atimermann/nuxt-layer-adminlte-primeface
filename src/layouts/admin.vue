@@ -27,7 +27,11 @@
       </div>
 
       <footer class="main-footer">
-        <slot name="footer" />
+        <slot name="footer">
+          <div class="flex justify-content-end">
+            v{{ template.version }}
+          </div>
+        </slot>
       </footer>
 
       <!-- /.control-sidebar -->
@@ -50,6 +54,8 @@ import RightNavbarLinks from '../components/admin/RightNavbarLinks.vue'
 import MainSidebar from '../components/admin/MainSidebar.vue'
 // import SidebarSearch from '../components/admin/SidebarSearch.vue'
 import ContentHeader from '../components/admin/ContentHeader.vue'
+
+const { template } = useAppConfig()
 
 const colapsedMenu = ref(false)
 

@@ -16,6 +16,7 @@ export default {
 # Importação de arquivo
 
 **Refs:**
+
 * https://github.com/rollup/plugins/tree/master/packages/dynamic-import-vars#limitations
 
 Você pode carregar arquivos da pasta assets usando da seguinte forma:
@@ -35,8 +36,9 @@ Crie um arquivo app.config na raiz da aplicação:
 src/app.vue:
 
 ```vue
+
 <template>
-  <NuxtLayout />
+  <NuxtLayout/>
 </template>
 
 <script setup>
@@ -61,9 +63,24 @@ appConfig.template = {
 
 # Refêrencia
 
-| Propriedade | Descrição       | Padrão | Exemplo                                         |
-|-------------|-----------------|--------|-------------------------------------------------|
-| logoPath    | Caminho da logo |        | (await import('~/assets/img/logo.png')).default |
-|             |                 |        |                                                 |
-|             |                 |        |                                                 |
-```
+| Propriedade | Descrição                                                                  | Tipo          | Padrão     | Exemplo                                         |
+|-------------|----------------------------------------------------------------------------|---------------|------------|-------------------------------------------------|
+| logoPath    | Caminho da logo                                                            | Texto         |            | (await import('~/assets/img/logo.png')).default |
+| logoLabel   | Texto com a logo, usado no login e no admin  (Normalmente nome do projeto) | Texto         | AdminLte 3 |                                                 |
+| menu        | Configuração do menu (Ver mais abaixo)                                     | Objeto (Menu) |            |                                                 |
+
+## Menu
+
+| Propriedade | Descrição              | Tipo              | Padrão | Exemplo |
+|-------------|------------------------|-------------------|--------|---------|
+| Items       | Lista de itens do menu | Array de MenuItem |        |         |
+
+## MenuItem
+
+| Propriedade | Descrição                          | Tipo              | Padrão | Exemplo            |
+|-------------|------------------------------------|-------------------|--------|--------------------|
+| title       | Título da entrada no menu          | String            |        |                    |
+| link        | Caminho destino ao clicar no menu  | String            |        | '/dashboard'       |
+| iconClasses | Icone para esta entrada do menu    | Array             |        | [ 'pi', 'pi-home'] |
+| subItems    | Lista de Submenu (Máximo 2 níveis) | Array de MenuItem |        |                    |
+
