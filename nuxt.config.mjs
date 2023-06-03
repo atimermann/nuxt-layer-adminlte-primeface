@@ -1,6 +1,6 @@
-import {defineNuxtConfig} from 'nuxt/config'
-import {fileURLToPath} from 'url'
-import {dirname, join} from 'path'
+import { defineNuxtConfig } from 'nuxt/config'
+import { fileURLToPath } from 'url'
+import { dirname, join } from 'path'
 
 // TODO: Alterar quando for corrigido
 // https://nuxt.com/docs/guide/going-further/layers#relative-paths-and-aliases
@@ -35,7 +35,13 @@ export default defineNuxtConfig({
     // ========================
     //  ADMIN LTE CONFIG
     // ========================
-    join(currentDir, './src/assets/adminlte/css/adminlte.css')
+    join(currentDir, './src/assets/adminlte/css/adminlte.css'),
+
+    // ========================
+    // fortawesome
+    // ========================
+    '@fortawesome/fontawesome-svg-core/styles.css'
+
   ],
   build: {
     transpile: ['primevue']
