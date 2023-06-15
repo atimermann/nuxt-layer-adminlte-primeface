@@ -46,7 +46,6 @@
 TODO: Implementar active corretamente para exibir o menu ativo
     Implementar menu perfil no lado direito superior
     Implementar configuração de menu
-    d
 */
 
 const { template } = useAppConfig()

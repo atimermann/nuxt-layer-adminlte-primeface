@@ -39,6 +39,10 @@ app.config
 
 [Consulte aqui refêrencia completa do app.config](./docs/config.md)
 
+## Desenvolvendo seu projeto em conjunto com o template
+
+[Clique aqui para entender como trabalhar com este template em seu projeto](./docs/config.md)
+
 ## Layouts
 
 [Documentação completa sobre Layout](./docs/layout.md)
@@ -75,7 +79,7 @@ Você pode simplesmente criar um plugin para isso:
 
 Exemplo:
 
-    src/plugins/prime-vue.mjs
+    src/plugins/primevue.mjs
 
 ```javascript
 import {defineNuxtPlugin} from '#app'
@@ -92,6 +96,8 @@ export default defineNuxtPlugin((nuxtApp) => {
 
 Para obter mais informações sobre como implementar e trabalhar com camadas (layers) no Nuxt, consulte
 a [documentação oficial do Nuxt sobre a criação de layers](https://nuxt.com/docs/getting-started/layers).
+
+
 
 ## Working on your theme
 
