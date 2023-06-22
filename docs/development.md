@@ -86,7 +86,12 @@ Por outro lado, o CSS do AdminLTE pode ser alterado em:
 
     src/assets/adminlte/css/*
 
-## Configurando o Ambiente para Desenvolver Seu Projeto em Conjunto com o Nuxt-Layer-Adminlte-Primeface
+
+## Atualizando com AdminLTE
+
+Baixe o AdminLTE 3 e rode localmente com http-server para facilitar a atualização deste template com as funcionalidades do AdminLte, correção e adição CSS
+
+## Configurando o ambiente para desenvolver o seu projeto em conjunto com o nuxt-layer-adminlte-primeface
 
 Crie um script na raiz do seu projeto com o seguinte código:
 

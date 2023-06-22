@@ -13,6 +13,7 @@ import { pt } from '../locale/locale.mjs'
 // Módulos carregados
 
 import Card from 'primevue/card'
+import Panel from 'primevue/panel'
 import PanelMenu from 'primevue/panelmenu'
 import Button from 'primevue/button'
 import DataTable from 'primevue/datatable'
@@ -29,6 +30,7 @@ import InputNumber from 'primevue/inputnumber'
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(PrimeVue, { ripple: true, locale: pt })
   nuxtApp.vueApp.component('Card', Card)
+  nuxtApp.vueApp.component('Panel', Panel)
   nuxtApp.vueApp.component('PanelMenu', PanelMenu)
   nuxtApp.vueApp.component('Button', Button)
   nuxtApp.vueApp.component('DataTable', DataTable)
