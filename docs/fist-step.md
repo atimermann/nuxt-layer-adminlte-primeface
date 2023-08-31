@@ -58,3 +58,37 @@ Então você precisa definir o container que deseja em cada página, por exemplo
 **IMPORTANTE:** Caso não defina container, o conteúdo ficará desalinhado.
 
 **DICA:** Você pode verificar o layout padrão em layouts
+
+## Componentes PrimeVue
+
+Deve ser importado diretamente no componente onde será usado.
+
+Exemplo:
+
+```vue
+<template>
+  <div class="container-fluid">
+    <Card>   
+      <template #content>
+        <DataTable :value="products" table-style="min-width: 50rem" show-gridlines>
+          <Column field="code" header="Code" />
+          <Column field="name" header="Name" />
+          <Column field="category" header="Category" />
+          <Column field="quantity" header="Quantity" />
+        </DataTable>
+      </template>
+    </Card>
+  </div>
+</template>
+
+<script setup>
+
+import Card from 'primevue/card'
+import DataTable from 'primevue/datatable'
+import Column from 'primevue/column'
+
+  [...]
+  
+</script>
+
+```
