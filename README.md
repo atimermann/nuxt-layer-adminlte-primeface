@@ -1,17 +1,21 @@
 # Nuxt Layer AdminLTE + PrimeFace
 
-Este projeto é uma camada do Nuxt 3 (layer) desenvolvida para facilitar a integração
-do [PrimeVue 3](https://primefaces.org/primevue/) e do [AdminLTE 3](https://adminlte.io/themes/v3/). Esta camada é
+Este projeto é uma camada do Nuxt 3 (layer). ([Leia sobre layer aqui](https://nuxt.com/docs/guide/going-further/layers))
+
+Desenvolvida para facilitar a integração do [PrimeVue 3](https://primefaces.org/primevue/) e do [AdminLTE 3](https://adminlte.io/themes/v3/). Esta camada é
 projetada para ser facilmente adicionada a qualquer projeto Nuxt 3, fornecendo um template completo e funcional para
 construção de aplicações web.
 
 Você pode consultar a documentação oficial do Nuxt 3 [aqui](https://v3.nuxtjs.org/).
 
+O Admin LTE é baseada no Bootstrap, que já está incorporado ao css do Admin LTE. Portanto neste template temos acesso
+tanto a componentes de css do PrimeFlex quanto do bootstrap.
+
 ## Requisitos
 
 Antes de prosseguir com a instalação desta camada, certifique-se de que seu projeto Nuxt 3 esteja configurado e
 funcionando corretamente. Caso ainda não tenha um projeto Nuxt 3, siga as instruções
-na [documentação oficial](https://v3.nuxtjs.org/docs/getting-started/introduction) para criar um novo projeto.
+na [documentação oficial](https://nuxt.com/docs/getting-started/introduction) para criar um novo projeto.
 
 ## Instalação
 
@@ -21,7 +25,14 @@ Para instalar esta camada do Nuxt 3, siga os passos abaixo:
 2. Execute o comando abaixo para instalar a camada via npm:
 
 ```bash
-npm install --save @agtm/nuxt-layer-adminlte-primeface
+npm i @agtm/nuxt-layer-adminlte-primeface
+```
+
+Instale o primevue no seu projeto para poder utilizar componentes primevue que não foram importado no
+nuxt-layer-adminlte-primeface:
+
+```bash
+npm i primefaces
 ```
 
 ## Configuração
@@ -30,9 +41,14 @@ No arquivo nuxt.config.js, adicione a camada no array buildModules:
 
 ```javascript
 defineNuxtConfig({
-  extends: '@agtm/nuxt-layer-adminlte-primeface'
+    ssr: false,
+    srcDir: 'src', // Obrigatório
+    extends: '@agtm/nuxt-layer-adminlte-primeface'
 })
 ```
+
+**Importante:** Este template está pré-configurado para utilizar o diretório src para armazenas o código fonte do
+projeto, então crie a pasta src e jogue os diretótrios assets, pages, public para lá.
 
 Para personalizar o template você pode custimizar o layout (veja próximo tópico) e através de configuração no
 app.config
@@ -88,16 +104,20 @@ import {defineNuxtPlugin} from '#app'
 import Card from 'primevue/card'
 
 export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.component('Card', Card)
+    nuxtApp.vueApp.component('Card', Card)
 })
 ```
 
+# Primeiros passos
+
+Depois de tudo configurado, [entre aqui para começar desenvolver sua aplicação.](./docs/fist-step.md)
+
 # Desenvolvimento
+
+**IMPORTANTE:** Mantenha sempre documentação atualizada enquanto desenvolve, devido a complexidade do projeto
 
 Para obter mais informações sobre como implementar e trabalhar com camadas (layers) no Nuxt, consulte
 a [documentação oficial do Nuxt sobre a criação de layers](https://nuxt.com/docs/getting-started/layers).
-
-
 
 ## Working on your theme
 

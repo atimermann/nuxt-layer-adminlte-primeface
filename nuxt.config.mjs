@@ -24,13 +24,18 @@ export default defineNuxtConfig({
     //  PRIME CONFIG
     // ========================
 
-    // 'primevue/resources/themes/bootstrap4-light-blue/theme.css', (Não usar direto)
+    // TODO: ao usar npm run link, o nuxt não encontra mais o caminho, necessário especificar manualmente, verificar
+    //    como funciona sem o link e se tem alguma forma de carregar q não tenha este problema
 
+    // 'primevue/resources/themes/bootstrap4-light-blue/theme.css', (Não usar direto)
     join(currentDir, './src/assets/theme.css'),
     // '~/assets/theme.css', // (Customizado) Este arquivo foi gerado em https://designer.primevue.org/#/ e modificado
-    'primevue/resources/primevue.min.css',
-    'primeicons/primeicons.css',
-    'primeflex/primeflex.css',
+    join(currentDir, './node_modules/primevue/resources/primevue.min.css'),
+    join(currentDir, './node_modules/primeicons/primeicons.css'),
+    join(currentDir, './node_modules/primeflex/primeflex.css'),
+    // 'primevue/resources/primevue.min.css',
+    // 'primeicons/primeicons.css',
+    // 'primeflex/primeflex.css',
 
     // ========================
     //  ADMIN LTE CONFIG
@@ -40,7 +45,8 @@ export default defineNuxtConfig({
     // ========================
     // fortawesome
     // ========================
-    '@fortawesome/fontawesome-svg-core/styles.css'
+    join(currentDir, './node_modules/@fortawesome/fontawesome-svg-core/styles.css')
+    // '@fortawesome/fontawesome-svg-core/styles.css'
 
   ],
   build: {

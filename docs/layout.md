@@ -1,4 +1,4 @@
-# Layouts
+# Layouts ([Nuxt](https://nuxt.com/docs/guide/directory-structure/layouts))
 
 Este template inclui alguns layouts pré-definidos que você pode utilizar no seu projeto:
 
