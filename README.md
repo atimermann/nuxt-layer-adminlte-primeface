@@ -110,7 +110,15 @@ export default defineNuxtPlugin((nuxtApp) => {
 
 # Primeiros passos
 
-Depois de tudo configurado, [entre aqui para começar desenvolver sua aplicação.](./docs/fist-step.md)
+Depois de tudo configurado, [entre aqui para começar desenvolver sua aplicação.](./docs/first-step.md)
+
+# Componentes
+
+Foi desenvolvido alguns componentes baseado no AdmiLte não vinculado ao PrimeVue:
+
+### NfCard
+[Documentação aqui](./docs/components/nf-card.md)
+
 
 # Desenvolvimento
 

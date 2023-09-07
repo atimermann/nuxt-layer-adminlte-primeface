@@ -29,7 +29,7 @@
       <footer class="main-footer">
         <slot name="footer">
           <div class="flex justify-content-end">
-            v{{ template.version }}
+            {{ template.version }}
           </div>
         </slot>
       </footer>

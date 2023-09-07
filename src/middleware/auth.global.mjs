@@ -8,8 +8,8 @@
 
 let logged = false
 export default defineNuxtRouteMiddleware((to, from) => {
-  if (to.path !== '/login' && !logged) {
-    logged = true
-    return navigateTo({path: '/login'})
-  }
+  // if (to.path !== '/login' && !logged) {
+  //   logged = true
+  //   return navigateTo({path: '/login'})
+  // }
 })
