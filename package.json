@@ -2,7 +2,7 @@
   "name": "@agtm/nuxt-layer-adminlte-primeface",
   "private": false,
   "type": "module",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Nuxt 3 layer for integrating AdminLTE 3 and PrimeVue 3 in your project",
   "author": "André Timermann",
   "license": "ISC",
