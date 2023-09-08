@@ -1,10 +1,10 @@
 <template>
   <div class="card" :class="cardClass">
     <div class="card-header">
-      <div class="card-title ">
+      <div v-if="$slots.title" class="card-title ">
         <slot name="title" />
       </div>
-      <div class="card-tools">
+      <div v-if="$slots.tools" class="card-tools">
         <slot name="tools" />
       </div>
     </div>
@@ -13,11 +13,16 @@
       <slot name="content" />
     </div>
 
-    <div class="card-footer">
+    <div v-if="$slots.footer" class="card-footer">
       <slot name="footer" />
     </div>
     <!-- /.card-body -->
-    <div v-show="overlay" class="overlay" :class="overlay">
+    <div
+      v-if="$slots.overlay"
+      v-show="overlay"
+      class="overlay"
+      :class="overlay"
+    >
       <slot name="overlay" />
     </div>
   </div>

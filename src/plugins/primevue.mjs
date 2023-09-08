@@ -13,10 +13,13 @@ import { defineNuxtPlugin } from '#app'
 import PrimeVue from 'primevue/config'
 
 import { pt } from '../locale/locale.mjs'
+import Tooltip from 'primevue/tooltip'
 // Módulos carregados
 
 // TODO: Removido todos os componentes, importar diretamente no componente que vai utilizar
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(PrimeVue, { ripple: true, locale: pt })
+
+  nuxtApp.vueApp.directive('tooltip', Tooltip)
 })

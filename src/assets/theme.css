@@ -3196,23 +3196,23 @@
 }
 
 .p-datatable.p-datatable-sm .p-datatable-header {
-    padding: .5rem .5rem
+    padding: .1rem .1rem
 }
 
 .p-datatable.p-datatable-sm .p-datatable-thead > tr > th {
-    padding: .5rem .5rem
+    padding: .1rem .1rem
 }
 
 .p-datatable.p-datatable-sm .p-datatable-tbody > tr > td {
-    padding: .5rem .5rem
+    padding: .1rem .1rem
 }
 
 .p-datatable.p-datatable-sm .p-datatable-tfoot > tr > td {
-    padding: .5rem .5rem
+    padding: .1rem .1rem
 }
 
 .p-datatable.p-datatable-sm .p-datatable-footer {
-    padding: .5rem .5rem
+    padding: .1rem .1rem
 }
 
 .p-datatable.p-datatable-lg .p-datatable-header {

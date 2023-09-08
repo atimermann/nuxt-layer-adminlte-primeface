@@ -103,9 +103,12 @@ Assim como a propriedade `type`, esta propriedade muda a cor de fundo do card. V
 
 A propriedade `overlay` aceita duas strings como valores: `"dark"` e `"light"`. Isso permite que você coloque uma sobreposição escura ou clara sobre o card. Exemplo de uso:
 
+Normalmente utilizado para "loading" 
+
 ```html
 <NfCard overlay="dark">
-  <!-- conteúdo do card -->
+    <i class="fas fa-2x fa-sync-alt fa-spin"></i>
+    Carregando...
 </NfCard>
 ```
 
