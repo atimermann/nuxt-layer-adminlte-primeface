@@ -47,7 +47,7 @@ export default defineNuxtConfig({
     // ========================
     // fortawesome
     // ========================
-    join(currentDir, './node_modules/@fortawesome/fontawesome-svg-core/styles.css')
+    // join(currentDir, './node_modules/@fortawesome/fontawesome-svg-core/styles.css')
     // '@fortawesome/fontawesome-svg-core/styles.css'
 
   ],
