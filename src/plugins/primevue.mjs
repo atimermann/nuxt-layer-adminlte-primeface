@@ -11,9 +11,13 @@
 
 import { defineNuxtPlugin } from '#app'
 import PrimeVue from 'primevue/config'
-
 import { pt } from '../locale/locale.mjs'
 import Tooltip from 'primevue/tooltip'
+
+import 'primevue/resources/primevue.min.css'
+import 'primeicons/primeicons.css'
+import 'primeflex/primeflex.css'
+
 // Módulos carregados
 
 // TODO: Removido todos os componentes, importar diretamente no componente que vai utilizar
