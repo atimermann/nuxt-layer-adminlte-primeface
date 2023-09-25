@@ -19,6 +19,11 @@ na [documentação oficial](https://nuxt.com/docs/getting-started/introduction) 
 
 ## Instalação
 
+Primeiramente instale o nuxt3, mais detalhes em: https://nuxt.com/
+
+Requisitos:
+* Source dir deve estar configurado para src, veja mais detalhes em configuração abaixo
+
 Para instalar esta camada do Nuxt 3, siga os passos abaixo:
 
 1. Abra o terminal na raiz do seu projeto Nuxt 3.

@@ -16,7 +16,7 @@
           @click.prevent="toggleSubMenu(item)"
         >
 
-          <i :class="['nav-icon', ...item.iconClasses]" />
+          <i v-if="item.iconClasses" :class="['nav-icon', ...item.iconClasses]" />
           <p>
             {{ item.title }}
             <i v-if="item.subItems" class="right fas fa-angle-left" />
