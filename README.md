@@ -11,7 +11,7 @@ Você pode consultar a documentação oficial do Nuxt 3 [aqui](https://v3.nuxtjs
 
 Antes de prosseguir com a instalação desta camada, certifique-se de que seu projeto Nuxt 3 esteja configurado e
 funcionando corretamente. Caso ainda não tenha um projeto Nuxt 3, siga as instruções
-na [documentação oficial](https://v3.nuxtjs.org/docs/getting-started/introduction) para criar um novo projeto.
+na [documentação oficial](https://nuxt.com/docs/getting-started/introduction) para criar um novo projeto.
 
 ## Instalação
 
