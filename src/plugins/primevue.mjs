@@ -4,43 +4,26 @@
  * src/plugins/primevue.mjs
  * @author André Timermann <andre@timermann.com.br>
  *
+ * TODO: Reduzir ao máximo a quantidade de componentes Prime carregado automaticamente por aqui, é preferível importar
+ *  diretamente no componente
+ *
  */
 
 import { defineNuxtPlugin } from '#app'
 import PrimeVue from 'primevue/config'
-
 import { pt } from '../locale/locale.mjs'
+import Tooltip from 'primevue/tooltip'
+
+import 'primevue/resources/primevue.min.css'
+import 'primeicons/primeicons.css'
+import 'primeflex/primeflex.css'
+
 // Módulos carregados
 
-import Card from 'primevue/card'
-import Panel from 'primevue/panel'
-import PanelMenu from 'primevue/panelmenu'
-import Button from 'primevue/button'
-import DataTable from 'primevue/datatable'
-import Column from 'primevue/column'
-import Breadcrumb from 'primevue/breadcrumb'
-import Tree from 'primevue/tree'
-
-// Form Fields
-import InputText from 'primevue/inputtext'
-import AutoComplete from 'primevue/autocomplete'
-import Calendar from 'primevue/calendar'
-import InputNumber from 'primevue/inputnumber'
+// TODO: Removido todos os componentes, importar diretamente no componente que vai utilizar
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(PrimeVue, { ripple: true, locale: pt })
-  nuxtApp.vueApp.component('Card', Card)
-  nuxtApp.vueApp.component('Panel', Panel)
-  nuxtApp.vueApp.component('PanelMenu', PanelMenu)
-  nuxtApp.vueApp.component('Button', Button)
-  nuxtApp.vueApp.component('DataTable', DataTable)
-  nuxtApp.vueApp.component('Column', Column)
-  nuxtApp.vueApp.component('Breadcrumb', Breadcrumb)
-  nuxtApp.vueApp.component('Tree', Tree)
 
-  // Form Fields
-  nuxtApp.vueApp.component('InputText', InputText)
-  nuxtApp.vueApp.component('AutoComplete', AutoComplete)
-  nuxtApp.vueApp.component('Calendar', Calendar)
-  nuxtApp.vueApp.component('InputNumber', InputNumber)
+  nuxtApp.vueApp.directive('tooltip', Tooltip)
 })

@@ -51,8 +51,9 @@
     box-sizing: border-box
 }
 
+
 .p-component {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-size: 1rem;
     font-weight: normal
 }
@@ -2925,6 +2926,8 @@
     color: #fff
 }
 
+/*------------------------------ DATATABLE ------------------------------*/
+
 .p-datatable .p-paginator-top {
     border-width: 1px 0 0 0;
     border-radius: 0
@@ -2936,12 +2939,12 @@
 }
 
 .p-datatable .p-datatable-header {
-    background: #efefef;
+    background: #f8f9fa;
     color: #212529;
     border: solid #dee2e6;
     border-width: 1px 0 0 0;
-    padding: 1rem 1rem;
-    font-weight: 600
+    padding: .6rem .6rem;
+    font-weight: 600;
 }
 
 .p-datatable .p-datatable-footer {
@@ -2949,24 +2952,24 @@
     color: #212529;
     border: 1px solid #dee2e6;
     border-width: 1px 0 1px 0;
-    padding: 1rem 1rem;
+    padding: .6rem .6rem;
     font-weight: 600
 }
 
 .p-datatable .p-datatable-thead > tr > th {
     text-align: left;
-    padding: 1rem 1rem;
+    padding: .6rem .6rem;
     border: 1px solid #dee2e6;
     border-width: 1px 0 2px 0;
     font-weight: 600;
     color: #212529;
-    background: var(--surface-300);
+    background: var(--surface-100);
     transition: box-shadow .15s
 }
 
 .p-datatable .p-datatable-tfoot > tr > td {
     text-align: left;
-    padding: 1rem 1rem;
+    padding: .6rem .6rem;
     border: 1px solid #dee2e6;
     border-width: 1px 0 1px 0;
     font-weight: 600;
@@ -3031,7 +3034,7 @@
     text-align: left;
     border: 1px solid #dee2e6;
     border-width: 1px 0 0 0;
-    padding: 1rem 1rem
+    padding: .6rem .6rem
 }
 
 .p-datatable .p-datatable-tbody > tr > td .p-row-toggler, .p-datatable .p-datatable-tbody > tr > td .p-row-editor-init, .p-datatable .p-datatable-tbody > tr > td .p-row-editor-save, .p-datatable .p-datatable-tbody > tr > td .p-row-editor-cancel {
@@ -3193,23 +3196,23 @@
 }
 
 .p-datatable.p-datatable-sm .p-datatable-header {
-    padding: .5rem .5rem
+    padding: .1rem .1rem
 }
 
 .p-datatable.p-datatable-sm .p-datatable-thead > tr > th {
-    padding: .5rem .5rem
+    padding: .1rem .1rem
 }
 
 .p-datatable.p-datatable-sm .p-datatable-tbody > tr > td {
-    padding: .5rem .5rem
+    padding: .1rem .1rem
 }
 
 .p-datatable.p-datatable-sm .p-datatable-tfoot > tr > td {
-    padding: .5rem .5rem
+    padding: .1rem .1rem
 }
 
 .p-datatable.p-datatable-sm .p-datatable-footer {
-    padding: .5rem .5rem
+    padding: .1rem .1rem
 }
 
 .p-datatable.p-datatable-lg .p-datatable-header {
@@ -3231,6 +3234,8 @@
 .p-datatable.p-datatable-lg .p-datatable-footer {
     padding: 1.25rem 1.25rem
 }
+
+/*------------------------------ CSS ORIGINAL PRIME VUE Até AQUI ------------------------------*/
 
 .p-dataview .p-paginator-top {
     border-width: 1px 0 0 0;
@@ -4472,36 +4477,43 @@
     border-bottom-left-radius: 4px
 }
 
+/*------------------------------ CARD ------------------------------*/
+
 .p-card {
     background: #fff;
     color: #212529;
-    /*box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);*/
+    box-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2);
     border-radius: 4px
 }
 
 .p-card .p-card-body {
-    padding: 1.5rem
+    padding: .9rem;
+    padding-top: .5rem
 }
 
 .p-card .p-card-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: .5rem
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: .3rem;
 }
+
 
 .p-card .p-card-subtitle {
     font-weight: 400;
     margin-bottom: .5rem;
-    color: #6c757d
+    color: #6c757d;
 }
 
 .p-card .p-card-content {
-    padding: 1rem 0
+    /*padding: 1rem 0;*/
+    /*background: red;*/
 }
 
 .p-card .p-card-footer {
     padding: 1rem 0 0 0
 }
+
+/*------------------------------ CARD ------------------------------*/
 
 .p-fieldset {
     border: 1px solid #dee2e6;
