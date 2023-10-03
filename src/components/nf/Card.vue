@@ -1,6 +1,6 @@
 <template>
   <div class="card" :class="cardClass">
-    <div class="card-header">
+    <div v-if="$slots.title || $slots.tools" class="card-header">
       <div v-if="$slots.title" class="card-title ">
         <slot name="title" />
       </div>
@@ -9,7 +9,7 @@
       </div>
     </div>
     <!-- /.card-header -->
-    <div class="card-body">
+    <div class="card-body" :class="bodyClass">
       <slot name="content" />
     </div>
 
@@ -44,6 +44,10 @@ const props = defineProps({
 
       return true
     }
+  },
+  padding: {
+    type: Boolean,
+    default: true
   },
   outline: {
     type: Boolean,
@@ -92,6 +96,18 @@ const cardClass = computed({
     if (props.outline) {
       classes.push('card-outline')
     }
+    return classes
+  }
+})
+
+const bodyClass = computed({
+  get () {
+    const classes = []
+
+    if (!props.padding) {
+      classes.push('p-0')
+    }
+
     return classes
   }
 })
