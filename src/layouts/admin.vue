@@ -28,8 +28,9 @@
 
       <footer class="main-footer">
         <slot name="footer">
+          <!-- TODO: Estudar uma forma do usuário poder inserir um componente aqui, sem ser apenas texto-->
           <div class="flex justify-content-end">
-            {{ template.version }}
+            {{ template.version || 'Nuxt Admin' }}
           </div>
         </slot>
       </footer>
@@ -45,8 +46,6 @@
 // TODO: Configuração em parametros app.config.ts
 // TODO: Documentar tudo aqui e no zim (De preferencia criar cheatChet)
 // import {MenuItem, SubMenuItem} from '@agtm/nuxt-layer-adminlte-primevue'
-
-import { ref, provide } from 'vue'
 
 import SideBarMenu from '../components/admin/SideBarMenu.vue'
 import TopNavbar from '../components/admin/TopNavbar.vue'

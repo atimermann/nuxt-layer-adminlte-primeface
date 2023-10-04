@@ -27,10 +27,10 @@
           <transition name="slide-fade">
             <ul v-show="item.isOpen" class="nav nav-treeview pl-3 nav-link">
               <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex" class="nav-item">
-                <a :href="subItem.link" class="nav-link" :class="{ active: subItem.active }">
+                <nuxt-link :href="subItem.link" class="nav-link" :class="{ active: subItem.active }">
                   <i :class="['nav-icon', ...subItem.iconClasses]" />
                   <p>{{ subItem.title }}</p>
-                </a>
+                </nuxt-link>
               </li>
             </ul>
           </transition>
