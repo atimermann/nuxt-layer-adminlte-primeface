@@ -25,7 +25,7 @@
         </nuxt-link>
         <template v-if="item.subItems">
           <transition name="slide-fade">
-            <ul v-show="item.isOpen" class="nav nav-treeview pl-3">
+            <ul v-show="item.isOpen" class="nav nav-treeview pl-3 nav-link">
               <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex" class="nav-item">
                 <a :href="subItem.link" class="nav-link" :class="{ active: subItem.active }">
                   <i :class="['nav-icon', ...subItem.iconClasses]" />
@@ -370,5 +370,9 @@ function toggleSubMenu (item) {
     transform-origin: top left;
     transform: scale(0);
     opacity: 0;
+}
+
+.nav-link {
+  cursor: pointer;
 }
 </style>
