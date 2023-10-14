@@ -2,7 +2,7 @@
   "name": "@agtm/nuxt-layer-adminlte-primeface",
   "private": false,
   "type": "module",
-  "version": "0.2.8",
+  "version": "0.2.7",
   "description": "Nuxt 3 layer for integrating AdminLTE 3 and PrimeVue 3 in your project",
   "author": "André Timermann",
   "license": "ISC",
@@ -16,7 +16,8 @@
     "build": "nuxt build playground",
     "generate": "nuxt generate playground",
     "preview": "nuxt preview playground",
-    "lint": "eslint . --ext .js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "postinstall": "nuxt prepare playground"
   },
   "keywords": [
     "nuxt",
@@ -34,13 +35,13 @@
     "lodash": "^4.17.21",
     "primeflex": "^3.3.0",
     "primeicons": "^6.0.1",
-    "primevue": "^3.29.2"
+    "primevue": "^3.29.2",
+    "nuxt": "^3.7.3"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",
     "eslint": "^8.28.0",
     "eslint-config-standard": "^17.0.0",
-    "nuxt": "^3.3.2",
     "vitest": "^0.29.7"
   },
   "repository": {
