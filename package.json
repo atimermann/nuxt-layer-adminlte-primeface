@@ -16,8 +16,7 @@
     "build": "nuxt build playground",
     "generate": "nuxt generate playground",
     "preview": "nuxt preview playground",
-    "lint": "eslint . --ext .js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "postinstall": "nuxt prepare playground"
+    "lint": "eslint . --ext .js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "keywords": [
     "nuxt",
