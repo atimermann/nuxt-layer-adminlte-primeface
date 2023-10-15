@@ -42,6 +42,8 @@
 
 <script setup>
 
+import { useAppConfig } from '#imports'
+
 /*
 TODO: Implementar active corretamente para exibir o menu ativo
     Implementar menu perfil no lado direito superior

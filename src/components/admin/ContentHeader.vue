@@ -24,6 +24,8 @@
 
 <script setup>
 
+import { useRoute } from '#imports'
+
 const route = useRoute()
 
 </script>

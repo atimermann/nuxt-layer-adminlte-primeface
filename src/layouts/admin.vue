@@ -47,6 +47,8 @@
 // TODO: Documentar tudo aqui e no zim (De preferencia criar cheatChet)
 // import {MenuItem, SubMenuItem} from '@agtm/nuxt-layer-adminlte-primevue'
 
+import { useAppConfig, ref, provide } from '#imports'
+
 import SideBarMenu from '../components/admin/SideBarMenu.vue'
 import TopNavbar from '../components/admin/TopNavbar.vue'
 import RightNavbarLinks from '../components/admin/RightNavbarLinks.vue'

@@ -30,6 +30,8 @@
 
 <script setup>
 
+import { computed } from '#imports'
+
 const props = defineProps({
   type: {
     type: String,

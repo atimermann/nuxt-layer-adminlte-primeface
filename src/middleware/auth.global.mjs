@@ -6,6 +6,8 @@
  *
  */
 
+import { defineNuxtRouteMiddleware } from '#imports'
+
 let logged = false
 export default defineNuxtRouteMiddleware((to, from) => {
   // if (to.path !== '/login' && !logged) {

@@ -9,15 +9,20 @@
   "main": "./nuxt.config.mjs",
   "module": "./src/index.mjs",
   "scripts": {
-    "publish-patch": "npm version patch && npm publish && git push",
-    "publish-minor": "npm version minor && npm publish && git push",
-    "publish-major": "npm version major && npm publish && git push",
+    "commit": "cz",
+    "release": "dotenv -- npx semantic-release",
     "dev": "nuxi dev playground",
     "build": "nuxt build playground",
     "generate": "nuxt generate playground",
     "preview": "nuxt preview playground",
-    "lint": "eslint . --ext .js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "lint:test": "npx eslint src",
+    "lint": "npx eslint --fix src",
     "postinstall": "nuxt prepare playground"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
   },
   "keywords": [
     "nuxt",
@@ -33,15 +38,19 @@
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "@nuxt/kit": "^3.3.2",
     "lodash": "^4.17.21",
+    "nuxt": "^3.7.3",
     "primeflex": "^3.3.0",
     "primeicons": "^6.0.1",
-    "primevue": "^3.29.2",
-    "nuxt": "^3.7.3"
+    "primevue": "^3.29.2"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "dotenv-cli": "^7.3.0",
     "eslint": "^8.28.0",
-    "eslint-config-standard": "^17.0.0",
+    "eslint-config-standard": "^17.1.0",
+    "semantic-release": "^22.0.5",
     "vitest": "^0.29.7"
   },
   "repository": {
@@ -55,5 +64,10 @@
   "files": [
     "src",
     "nuxt.config.mjs"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
