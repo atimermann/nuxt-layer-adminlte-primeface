@@ -63,7 +63,7 @@
 
 <script setup>
 
-import { definePageMeta, useAppConfig } from '#imports'
+import { definePageMeta, useAppConfig, navigateTo } from '#imports'
 
 const { template } = useAppConfig()
 
